@@ -1,0 +1,17 @@
+{"records": [
+    {
+        "jsonSchemaLocation": "/TEST/Service Descriptors/test.REST1-REST1.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.org/TEST-JSON"
+    },
+    {
+        "jsonSchemaLocation": "/TEST/Service Descriptors/test.REST2-REST2.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.org/TEST-JSON"
+    },
+    {
+        "jsonSchemaLocation": "/TEST/Service Descriptors/test.REST3-REST3.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.org/TEST-JSON"
+    }
+]}

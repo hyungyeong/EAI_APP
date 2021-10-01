@@ -1,0 +1,17 @@
+{
+    "records": [],
+    "resources": [
+        {
+            "location": "Service Descriptors/test.REST1-REST1.json",
+            "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/test.REST2-REST2.json",
+            "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/test.REST3-REST3.json",
+            "type": "generated"
+        }
+    ]
+}

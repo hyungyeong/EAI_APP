@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/TEST-JSON" xmlns:tns="http://www.example.org/TEST-JSON" elementFormDefault="qualified">
+
+    <element name="Req-Telegram">
+    	<complexType>
+    		<sequence>
+    			<element name="MESSAGE1" type="string"></element>
+    			<element name="MESSAGE2" type="string"></element>
+    		</sequence>
+    	</complexType>
+    </element>
+
+    <element name="Res-Telegram">
+    	<complexType>
+    		<sequence>
+    			<element name="MESSAGE" type="string"></element>
+    		</sequence>
+    	</complexType>
+    </element>
+</schema>

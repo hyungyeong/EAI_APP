@@ -1,0 +1,50 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "REST1",
+    "description" : "REST1 service"
+  },
+  "host" : "localhost:8080",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/rest1" : {
+      "post" : {
+        "summary" : "postREST1",
+        "description" : "postREST1",
+        "operationId" : "post-rest1",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "type" : "string"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a Res-Telegram to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/Res-Telegram"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "Res-Telegram" : {
+      "type" : "object",
+      "required" : [ "MESSAGE" ],
+      "properties" : {
+        "MESSAGE" : {
+          "type" : "string"
+        }
+      }
+    }
+  }
+}
