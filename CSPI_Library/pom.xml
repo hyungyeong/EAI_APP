@@ -6,7 +6,7 @@
     <groupId>com.tibco.bw</groupId>
     <artifactId>Daemon_HA.application.parent</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <relativePath>../Daemon_HA.application.parent</relativePath>
+    <relativePath>../Daemon_HA/Daemon_HA.application.parent</relativePath>
   </parent>
   <artifactId>CSPI_Library</artifactId>
   <packaging>bwmodule</packaging>
