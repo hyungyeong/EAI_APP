@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jsv:DocumentRoot xmlns:jsv="http://tns.tibco.com/bw/model/core/jobSV">
+  <jobSharedVariables>
+    <jobSharedVariable name="InterfaceInfos" type="{http://www.example.org/InterfaceInfos}InterfaceInfos" initialValueMode="none"/>
+    <jobSharedVariable name="LogAlertInfo" type="{http://www.example.org/GetInterfaceInfo}LogAlertInfo" initialValueMode="none"/>
+    <jobSharedVariable name="TransactionInfo" type="{http://www.example.org/TransactionInfo}TransactionInfo" initialValueMode="none"/>
+  </jobSharedVariables>
+  <import importType="http://www.w3.org/2001/XMLSchema" namespace="http://www.example.org/InterfaceInfos" location="../Schemas/InterfaceInfos.xsd"/>
+  <import importType="http://www.w3.org/2001/XMLSchema" namespace="http://www.example.org/GetInterfaceInfo" location="../Schemas/GetInterfaceInfo.xsd"/>
+  <import importType="http://www.w3.org/2001/XMLSchema" namespace="http://www.example.org/TransactionInfo" location="../Schemas/TransactionInfo.xsd"/>
+</jsv:DocumentRoot>

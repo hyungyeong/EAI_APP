@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/InterfaceSysId" xmlns:tns="http://www.example.org/InterfaceSysId" elementFormDefault="qualified">
+
+    <element name="InterfaceSysId">
+    	<complexType>
+    		<sequence>
+    			<element name="IF_SYSID" type="string" maxOccurs="1" minOccurs="0"></element>
+    		</sequence>
+    	</complexType>
+    </element>
+    	
+    <element name="InterfaceSysId_Output">
+    	<complexType>
+    		<sequence>
+    			<element name="IF_SYSID" type="string"></element>
+    		</sequence>
+    	</complexType>
+    </element>
+    	
+</schema>

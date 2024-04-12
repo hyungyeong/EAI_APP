@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/InterfaceInfos" xmlns:tns="http://www.example.org/InterfaceInfos" elementFormDefault="qualified" xmlns:Q1="http://www.example.org/BaseInfo">
+
+    <import namespace="http://www.example.org/BaseInfo" schemaLocation="BaseInfo.xsd"></import>
+    <element name="InterfaceInfos">
+    	<complexType>
+    		<sequence>
+    			<element ref="Q1:InterfaceInfo" maxOccurs="unbounded" minOccurs="0"></element>
+    		</sequence>
+    	</complexType>
+    </element>
+</schema>

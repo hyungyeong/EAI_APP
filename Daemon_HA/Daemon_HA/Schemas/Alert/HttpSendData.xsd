@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"
+	xmlns:tns="http://www.tibco.com/namespaces/tnt/plugins/generalactivities/mapper/1603167291587"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.tibco.com/namespaces/tnt/plugins/generalactivities/mapper/1603167291587">
+	<xsd:complexType name="MapperInputType">
+		<xsd:sequence>
+			<xsd:element name="CMD" type="xsd:string" maxOccurs="1"
+				minOccurs="0"></xsd:element>
+			<xsd:element name="Action" type="xsd:string" maxOccurs="1"
+				minOccurs="0"></xsd:element>
+			<xsd:element name="SystemName" type="xsd:string"
+				maxOccurs="1" minOccurs="0"></xsd:element>
+			<xsd:element name="SendID" type="xsd:string" maxOccurs="1"
+				minOccurs="0"></xsd:element>
+			<xsd:element name="SendName" type="xsd:string" maxOccurs="1"
+				minOccurs="0"></xsd:element>
+			<xsd:element name="RecvId" type="xsd:string" maxOccurs="1"
+				minOccurs="0"></xsd:element>
+			<xsd:element name="Subject" type="xsd:string" maxOccurs="1"
+				minOccurs="0"></xsd:element>
+			<xsd:element name="Contents" type="xsd:string" maxOccurs="1"
+				minOccurs="0"></xsd:element>
+			<xsd:element name="URL" type="xsd:string" maxOccurs="1"
+				minOccurs="0"></xsd:element>
+			<xsd:element name="Option" type="xsd:string" maxOccurs="1"
+				minOccurs="0"></xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:element name="MapperInput" tibex:source="bw.generalactivities.mapper"
+		type="tns:MapperInputType" />
+
+	<xsd:element name="param" type="xsd:string"></xsd:element>
+</xsd:schema>

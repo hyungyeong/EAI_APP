@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/FileInfo" xmlns:tns="http://www.example.org/FileInfo" elementFormDefault="qualified">
+
+    <element name="File">
+    	<complexType>
+    		<sequence>
+    			<element name="FullName" type="string" maxOccurs="unbounded" minOccurs="0"></element>
+    			<element name="MaxFileByteSize" type="int" maxOccurs="1"
+    				minOccurs="0">
+    			</element>
+    		</sequence>
+    	</complexType></element>
+
+</schema>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/BaseInfos" xmlns:tns="http://www.example.org/BaseInfos" elementFormDefault="qualified" xmlns:Q1="http://www.example.org/BaseInfo">
+
+    <import namespace="http://www.example.org/BaseInfo" schemaLocation="BaseInfo.xsd"></import>
+    <element name="BaseInfos">
+    	<complexType>
+    		<sequence>
+    			<element name="WORK_GROUP" type="string"></element>
+    			<element ref="Q1:BaseInfo" maxOccurs="unbounded" minOccurs="0"></element>
+    		</sequence>
+    	</complexType>
+    </element>
+</schema>

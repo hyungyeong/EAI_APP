@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/FileDelete" xmlns:tns="http://www.example.org/FileDelete" elementFormDefault="qualified">
+
+    <element name="DeleteDay">
+    	<complexType>
+    		<sequence>
+    			<element name="Day">
+    				<complexType>
+    					<sequence>
+    						<element name="YYYYMMDD" type="string"></element>
+    					</sequence>
+    				</complexType>
+    			</element>
+    		</sequence>
+    	</complexType>
+    </element>
+
+    <element name="DeleteFileInfo">
+    	<complexType>
+    		<sequence>
+    			<element name="FileInfo">
+    				<complexType>
+    					<sequence>
+    						<element name="Path" type="string"></element>
+    						<element name="Name" type="string" minOccurs="0" maxOccurs="1"></element>
+    					</sequence>
+    				</complexType>
+    			</element>
+    		</sequence>
+    	</complexType>
+    </element>
+
+    <element name="CheckLastDay">
+    	<complexType>
+    		<sequence>
+    			<element name="root">
+    				<complexType>
+    					<sequence>
+    						<element name="LastDay" type="boolean"></element>
+    					</sequence>
+    				</complexType>
+    			</element>
+    		</sequence>
+    	</complexType>
+    </element>
+
+    <element name="RemoveFolder">
+    	<complexType>
+    		<sequence>
+    			<element name="root">
+    				<complexType>
+    					<sequence>
+    						<element name="RemoveFolder" type="string"></element>
+    					</sequence>
+    				</complexType>
+    			</element>
+    		</sequence>
+    	</complexType>
+    </element>
+</schema>

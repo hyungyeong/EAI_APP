@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/TransactionInfo" xmlns:tns="http://www.example.org/TransactionInfo" elementFormDefault="qualified">
+
+    <element name="TransactionInfo">
+    	<complexType>
+    		<sequence>
+    			<element name="IF_ID" type="string"></element>
+    			<element name="IF_SYSID" type="string"></element>
+    		</sequence>
+    	</complexType>
+    </element>
+    
+    <element name="CurrentLogInput">
+    	<complexType>
+    		<sequence>
+    			<element name="IF_ID" type="string"></element>
+    			<element name="IF_SYSID" type="string"></element>
+    			<element name="LOGGING_DATE" type="dateTime"></element>
+    			<element name="SEQ" type="string"></element>
+    			<element name="JOB_ID" type="string"></element>
+    		</sequence>
+    	</complexType>
+    </element>    
+</schema>

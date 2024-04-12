@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/BaseInfo" xmlns:tns="http://www.example.org/BaseInfo" elementFormDefault="qualified">
+
+    <element name="BaseInfo">
+    	<complexType>
+    		<sequence>
+    			<element name="GROUP_INTERFACEID" type="string"></element>
+    			<element ref="tns:InterfaceInfo" maxOccurs="unbounded" minOccurs="0"></element>
+    		</sequence>
+    	</complexType>
+    </element>
+
+    <element name="InterfaceInfo">
+    	<complexType>
+    		<sequence>
+    			<element name="INTERFACE_ID" type="string"></element>
+    			<element name="Interface">
+    				<complexType>
+    					<sequence>
+    						<element name="INTERFACE_TYPE"
+    							type="string">
+    						</element>
+    						<element name="SOURCE_SYSTEM"
+    							type="string">
+    						</element>
+    						<element name="SOURCE_SYSTEM_PROTOCOL"
+    							type="string">
+    						</element>
+    						<element name="TARGET_SYSTEM"
+    							type="string">
+    						</element>
+    						<element name="TARGET_SYSTEM_PROTOCOL"
+    							type="string">
+    						</element>
+    						<element name="INTERFACE_TIMEOUT"
+    							type="int">
+    						</element>
+    						<element name="INTERFACE_TARGETSERVICE"
+    							type="string">
+    						</element>
+    						<element name="INTERFACE_ETC"
+    							type="string">
+    						</element>
+    						<element ref="tns:FileInfo"></element>
+    						<element ref="tns:RetryInfo"></element>
+    						<element ref="tns:AlertInfo"></element>
+    						<element ref="tns:LogInfo"></element>
+    					</sequence>
+    				</complexType>
+    			</element>
+    		</sequence>
+    	</complexType>
+    </element>
+
+    <element name="FileInfo">
+    	<complexType>
+    		<sequence>
+    			<element name="FILE_POSTPROCESSINGDIR" type="string"></element>
+    			<element name="Source">
+    				<complexType>
+    					<sequence>
+    						<element name="FILE_SOURCEDIR"
+    							type="string">
+    						</element>
+    						<element name="FILE_SOURCEFILENAME" type="string"></element>
+    					</sequence>
+    				</complexType>
+    			</element>
+    			<element name="Target">
+    				<complexType>
+    					<sequence>
+    						<element name="FILE_TARGETDIR"
+    							type="string">
+    						</element>
+    						<element name="FILE_TARGETFILENAME" type="string"></element>
+    					</sequence>
+    				</complexType>
+    			</element>
+    		</sequence>
+    	</complexType>
+    </element>
+
+    <element name="RetryInfo">
+    	<complexType>
+    		<sequence>
+    			<element name="RETRY_FLAG" type="string"></element>
+    			<element name="RETRY_COUNT" type="int"></element>
+    			<element name="RETRY_DELAY" type="int"></element>
+    		</sequence>
+    	</complexType>
+    </element>
+
+    <element name="AlertInfo">
+    	<complexType>
+    		<sequence>
+    			<element name="ALERT_FLAG" type="string"></element>
+    			<element name="ALERT_SMSFLAG" type="string"></element>
+    			<element name="ALERT_MAILFLAG" type="string"></element>
+    		</sequence>
+    	</complexType>
+    </element>
+
+    <element name="LogInfo">
+    	<complexType>
+    		<sequence>
+    			<element name="LOG_LEVEL" type="string"></element>
+    			<element name="LOG_TYPE" type="string"></element>
+    			<element name="LOG_DATASECTION" type="string"></element>
+    			<element name="LOG_DATASIZE" type="string"></element>
+    		</sequence>
+    	</complexType>
+    </element>
+</schema>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	 xmlns:BaseInfo="http://www.tibco.com/schemas/CSPI_Library/Library/Resources/Schemas/BaseInfo.xsd"
+	 targetNamespace="http://www.tibco.com/schemas/CSPI_Library/Library/Resources/Schemas/BaseInfo.xsd"
+	 elementFormDefault="qualified"
+	 attributeFormDefault="unqualified">
+	<xs:element name="LogInfo">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="LOG_LEVEL" type="xs:string"/>
+				<xs:element name="LOG_TYPE" type="xs:string"/>
+				<xs:element name="LOG_DATASECTION" type="xs:string"/>
+				<xs:element name="LOG_DATASIZE" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

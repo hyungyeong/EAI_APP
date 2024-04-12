@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/LogAlertInfo" xmlns:tns="http://www.example.org/LogAlertInfo" elementFormDefault="qualified" xmlns:Q1="http://www.example.org/BaseInfo">
+
+    <import namespace="http://www.example.org/BaseInfo" schemaLocation="BaseInfo.xsd"></import>
+    <element name="LogAlertInfo">
+    	<complexType>
+    		<sequence>
+    			<element ref="Q1:LogInfo"></element>
+    			<element ref="Q1:AlertInfo"></element>
+    		</sequence>
+    	</complexType>
+    </element>
+</schema>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns:extns="http://www.tibco.com/schemas/CSPI_Library/Library/Resources/Schemas/BaseInfo.xsd" xmlns:extns1="http://www.tibco.com/schemas/CSPI_Library/Library/Resources/Schemas/Log.xsd" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions" xmlns:tns="http://www.tibco.com/namespaces/tnt/plugins/JMS" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:import namespace="http://www.tibco.com/schemas/CSPI_Library/Library/Resources/Schemas/Log.xsd" schemaLocation="Log.xsd"/>
+    <xs:import namespace="http://www.tibco.com/schemas/CSPI_Library/Library/Resources/Schemas/BaseInfo.xsd" schemaLocation="BaseInfo.xsd"/>
+    <xs:element name="root">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="HostName" type="xs:string"/>
+        <xs:element name="LOGGING_DATE" type="xs:dateTime"/>
+        <xs:element minOccurs="0" ref="extns:LogInfo"/>
+        <xs:element minOccurs="0" ref="extns1:Log"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

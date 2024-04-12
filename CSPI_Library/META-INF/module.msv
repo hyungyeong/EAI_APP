@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<msv:DocumentRoot xmlns:msv="http://tns.tibco.com/bw/model/core/moduleSV">
+  <moduleSharedVariables>
+    <moduleSharedVariable name="BaseInfos" type="{http://www.example.org/BaseInfos}BaseInfos" initialValueMode="none" initialValue=""/>
+    <moduleSharedVariable name="HostName" type="{http://www.example.org/HostInfo}HostName" initialValueMode="none"/>
+  </moduleSharedVariables>
+  <import importType="http://www.w3.org/2001/XMLSchema" namespace="http://www.example.org/BaseInfos" location="../Schemas/BaseInfos.xsd"/>
+  <import importType="http://www.w3.org/2001/XMLSchema" namespace="http://www.example.org/HostInfo" location="../Schemas/HostInfo.xsd"/>
+</msv:DocumentRoot>

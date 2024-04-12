@@ -1,0 +1,42 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: CSPI_Library Module
+Bundle-SymbolicName: CSPI_Library
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: TIBCO Software Inc.
+TIBCO-BW-ConfigProfile: META-INF/default.substvar
+TIBCO-BW-SharedModule: META-INF/module.bwm
+TIBCO-BW-Edition: bwcf
+TIBCO-BW-JobSharedVariables: META-INF/module.jsv
+Require-Capability: com.tibco.bw.model; filter:="(name=bwext)",
+ com.tibco.bw.palette; filter:="(name=bw.generalactivities)",
+ com.tibco.bw.palette; filter:="(name=bw.jdbc)",
+ com.tibco.bw.palette; filter:="(name=bw.file)",
+ com.tibco.bw.palette; filter:="(name=bw.jms)",
+ com.tibco.bw.palette; filter:="(name=bw.xml)",
+ com.tibco.bw.sharedresource.model; filter:="(name=bw.jdbc)",
+ com.tibco.bw.sharedresource.model; filter:="(name=bw.jmsconnection)",
+ com.tibco.bw.sharedresource.model; filter:="(name=bw.threadpool)"
+TIBCO-BW-ModuleSharedVariables: META-INF/module.msv
+Provide-Capability: com.tibco.bw.module; name="CSPI_Library"; version:Version="1.0.0",
+ com.tibco.bw.schemas; ns="",
+ com.tibco.bw.schemas; ns="http://www.example.org/BaseInfo",
+ com.tibco.bw.schemas; ns="http://www.example.org/BaseInfos",
+ com.tibco.bw.schemas; ns="http://www.example.org/Date",
+ com.tibco.bw.schemas; ns="http://www.example.org/GetGroupInterfaceInfo",
+ com.tibco.bw.schemas; ns="http://www.example.org/GetInterfaceInfo",
+ com.tibco.bw.schemas; ns="http://www.example.org/HostInfo",
+ com.tibco.bw.schemas; ns="http://www.example.org/InterfaceInfos",
+ com.tibco.bw.schemas; ns="http://www.example.org/InterfaceSysId",
+ com.tibco.bw.schemas; ns="http://www.example.org/Log",
+ com.tibco.bw.schemas; ns="http://www.example.org/LogAlertInfo",
+ com.tibco.bw.schemas; ns="http://www.example.org/TransactionInfo",
+ com.tibco.bw.schemas; ns="http://www.tibco.com/schemas/CSPI_Library/Library/Resources/Schemas/Batch.xsd",
+ com.tibco.bw.schemas; ns="http://www.tibco.com/schemas/CSPI_Library/Library/Resources/Schemas/Log.xsd",
+ com.tibco.bw.schemas; ns="http://www.tibco.com/schemas/CSPI_Library/Library/Resources/Schemas/BaseInfo.xsd",
+ com.tibco.bw.resources; name="Jdbc",
+ com.tibco.bw.processes; name="Sub",
+ com.tibco.bw.resources; name="Jms",
+ com.tibco.bw.resources; name="ThreadPool",
+ com.tibco.bw.processes; name="v5"
+TIBCO-BW-Version: 2.4.5 V45 2019-07-18

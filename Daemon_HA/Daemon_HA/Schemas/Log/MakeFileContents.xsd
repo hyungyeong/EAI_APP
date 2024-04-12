@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/FileContents" xmlns:tns="http://www.example.org/FileContents" elementFormDefault="qualified">
+    <element name="File">
+    	<complexType>
+    		<sequence>
+    			<element name="FileName" type="string"></element>
+    			<element name="LineSeparator" type="string"></element>
+    			<element name="Contents">
+    				<complexType>
+    					<sequence>
+    						<element name="IF_SYSID" type="string"></element>
+    						<element name="PHASE" type="string"></element>
+    						<element name="SEQ" type="string"></element>
+    						<element name="IF_ID" type="string"></element>
+    						<element name="JOB_ID" type="string"></element>
+    						<element name="HOST" type="string"></element>
+    						<element name="LOGGING_DATE"
+    							type="string">
+    						</element>
+    						<element name="KEY-VALUE" type="string" maxOccurs="unbounded" minOccurs="0"></element>
+    						<element name="Error" maxOccurs="1" minOccurs="0">
+    							<complexType>
+    								<sequence>
+    									<element name="ACTIVITY_ID"
+    										type="string">
+    									</element>
+    									<element name="ERR_CODE"
+    										type="string">
+    									</element>
+    									<element name="ERR_MSG"
+    										type="string">
+    									</element>
+    									<element name="ERR_STACK"
+    										type="string">
+    									</element>
+    								</sequence>
+    							</complexType></element>
+    					</sequence>
+    				</complexType></element>
+    		</sequence>
+    	</complexType></element>
+</schema>
