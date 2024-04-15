@@ -13,7 +13,7 @@
   <properties>
     <project.type>Docker</project.type>
     <docker.property.file>docker-dev.properties</docker.property.file>
-    <bw.Home>/bwce/2.8</bw.Home>
+    <bw.Home></bw.Home>
     <k8s.property.file>k8s-dev.properties</k8s.property.file>
     <skipTests>false</skipTests>
     <failIfNoTests>false</failIfNoTests>
