@@ -104,7 +104,7 @@
                 <imagePullPolicy>${bwdocker.autoPullImage}</imagePullPolicy>
                 <maintainer>${bwdocker.maintainer}</maintainer>
                 <assembly>
-                	<targetDir>/</targetDir>
+                  <targetDir>/</targetDir>
                 </assembly>
                 <tags>
                   <tag>latest</tag>
