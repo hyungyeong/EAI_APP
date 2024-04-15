@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/BatchSchedule" xmlns:tns="http://www.example.org/BatchSchedule" elementFormDefault="qualified">
+    <element name="Current">
+    	<complexType>
+    		<sequence>
+    			<element name="Year" type="string"/>
+    			<element name="Month" type="string"/>
+    			<element name="Day_of_Month" type="string"/>
+    			<element name="Day_of_Week" type="string"/>
+    			<element name="Hour" type="string"/>
+    			<element name="Minute" type="string"/>
+    		</sequence>
+    	</complexType>
+    </element>
+    <element name="Schedule">
+		<complexType>
+    		<sequence>
+    			<element name="IF_ID" type="string"/>
+    			<element name="DESTINATION" type="string"/>
+    			<element name="START_DATE" type="string"/>
+    			<element name="START_TIME" type="string"/>
+    			<element name="CYCLE_UNIT" type="string"/>
+    			<element name="CYCLE_INTERVAL" type="string"/>
+    			<element name="END_DATE" type="string"/>
+    			<element name="END_TIME" type="string"/>
+    			<element name="RETRY_FLAG" type="string"/>
+    			<element name="RETRY_COUNT" type="string"/>
+    			<element name="RETRY_DELAY" type="string"/>
+			</sequence>
+    	</complexType>
+	</element>
+    <element name="BatchSchedule">
+    	<complexType>
+    		<sequence>
+    			<element ref="tns:Schedule" minOccurs="0" maxOccurs="unbounded"/>
+    		</sequence>
+    	</complexType>
+    </element>
+    <element name="CheckSchedule">
+    	<complexType>
+    		<sequence>
+    			<element ref="tns:Current"/>
+    			<element ref="tns:Schedule"/>
+    		</sequence>
+    	</complexType>
+    </element>
+    <element name="CheckSkip">
+    	<complexType>
+    		<sequence>
+    			<element name="SkipYN" type="boolean"/>
+    		</sequence>
+    	</complexType>
+    </element>
+    <element name="Result">
+    	<complexType>
+    		<sequence>
+    			<element name="ScheduleYN" type="boolean"/>
+    		</sequence>
+    	</complexType>
+    </element>
+    <element name="BatchScheduleResult">
+    	<complexType>
+    		<sequence>
+    			<element name="IF_SYSID" type="string"/>
+    			<element name="LAST_SEND_DT" type="dateTime"/>
+    			<element name="LAST_SEND_RESULT" type="string"/>
+    			<element ref="tns:Schedule"/>
+    		</sequence>
+    	</complexType>
+    </element>
+    <element name="IfSysId">
+    	<complexType>
+    		<sequence>
+    			<element name="UUID" type="string"/>
+    		</sequence>
+    	</complexType>
+    </element>
+    <element name="SetBatchSchedule">
+    	<complexType>
+    		<sequence>
+    			<element name="Event" type="string"/>
+    		</sequence>
+    	</complexType>
+    </element>
+</schema>

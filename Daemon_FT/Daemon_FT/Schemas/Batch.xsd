@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	 xmlns:Batch="http://www.tibco.com/schemas/CSPI_Library/Library/Resources/Schemas/Batch.xsd"
+	 targetNamespace="http://www.tibco.com/schemas/CSPI_Library/Library/Resources/Schemas/Batch.xsd"
+	 elementFormDefault="qualified"
+	 attributeFormDefault="unqualified">
+	<xs:element name="Batch">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="Batch:Header"/>
+				<xs:element ref="Batch:Body" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Header">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="IF_ID" type="xs:string"/>
+				<xs:element name="UUID" type="xs:string"/>
+				<xs:element name="P_UUID" type="xs:string"/>
+				<xs:element name="SEND_DATE" type="xs:string"/>
+				<xs:element name="RETRY_FLAG" type="xs:string"/>
+				<xs:element name="RETRY_COUNT" type="xs:string"/>
+				<xs:element name="RETRY_DELAY" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Body" type="xs:string"/>
+</xs:schema>

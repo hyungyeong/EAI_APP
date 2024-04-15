@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="CustomFunctions"
+         name="CustomFunctions"
+         point="com.tibco.xml.cxf.common.customXPathFunction">
+      <customXPathFunctionGroup
+            class="cspi_custom_xpath_functions.CustomFunctions"
+            id="cspi_custom_xpath_functions">
+      </customXPathFunctionGroup>
+   </extension>
+
+</plugin>

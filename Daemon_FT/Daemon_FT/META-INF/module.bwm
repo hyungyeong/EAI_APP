@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:property="http://ns.tibco.com/bw/property" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_q2DqgBd1EeuorsVZPvTk2Q" targetNamespace="http://tns.tibco.com/bw/composite/Daemon_FT" name="Daemon_FT" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:property xmi:id="_rIEnkBd1EeuorsVZPvTk2Q" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_rIQ00Bd1EeuorsVZPvTk2Q" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_rITREBd1EeuorsVZPvTk2Q" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_rIVtUBd1EeuorsVZPvTk2Q" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_rIYwoBd1EeuorsVZPvTk2Q" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_rIbM4Bd1EeuorsVZPvTk2Q" name="BW.CLOUD.PORT" type="XMLSchema:int" scalable="true"/>
+  <sca:property xmi:id="_rIeQMBd1EeuorsVZPvTk2Q" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_j4yDEBmpEeueju1jmd5FjQ" name="/APPLICATION/Encoding" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_YydtUBpWEeuLjLCbfPiJcw" name="/APPLICATION/RESOURCES/JDBC/MaximumRows" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_VMahwBpYEeuLjLCbfPiJcw" name="/APPLICATION/RESOURCES/JDBC/SubsetSize" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_6prYABpZEeuLjLCbfPiJcw" name="/APPLICATION/RESOURCES/JDBC/Timeout" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_l4Z8YBeDEeuVfsASWLgHpA" name="/APPLICATION/RESOURCES/JDBC/EAI/JDBCDriver" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_1EPNYBeDEeuVfsASWLgHpA" name="/APPLICATION/RESOURCES/JDBC/EAI/DatabaseURL" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_7rf1QBeDEeuVfsASWLgHpA" name="/APPLICATION/RESOURCES/JDBC/EAI/UserName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_-7ltABeDEeuVfsASWLgHpA" name="/APPLICATION/RESOURCES/JDBC/EAI/Password" type="property:password" scaext:simpleValue="#!WOHdI50j3VkIfyUltjAyGQ==" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_HAVmkBeEEeuVfsASWLgHpA" name="/APPLICATION/RESOURCES/JDBC/EAI/MaximumConnections" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_Tz2VUBeEEeuVfsASWLgHpA" name="/APPLICATION/RESOURCES/JDBC/EAI/LoginTimeout" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_dxVSIBeEEeuVfsASWLgHpA" name="/APPLICATION/RESOURCES/JDBC/EAI/ConnectionIdleTimeout" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_pbqnwBeDEeuVfsASWLgHpA" name="/APPLICATION/RESOURCES/POOL/EAI/CorePoolSize" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_p-WooBeEEeuVfsASWLgHpA" name="/APPLICATION/RESOURCES/POOL/EAI/MaxPoolSize" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_vhbPoBeEEeuVfsASWLgHpA" name="/APPLICATION/RESOURCES/POOL/EAI/KeepAliveTime" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_0_mIgBeEEeuVfsASWLgHpA" name="/APPLICATION/RESOURCES/POOL/EAI/AutostartCoreThreads" type="XMLSchema:boolean" scaext:simpleValue="false" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_4odFkBeEEeuVfsASWLgHpA" name="/APPLICATION/RESOURCES/POOL/EAI/Daemon" type="XMLSchema:boolean" scaext:simpleValue="false" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_-tS84BeEEeuVfsASWLgHpA" name="/APPLICATION/RESOURCES/POOL/EAI/Priority" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_L7mg4BfrEeuGnqCQwo3TZg" name="/APPLICATION/RESOURCES/JMS/EAI/ProviderURL" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_iesTUBfrEeuGnqCQwo3TZg" name="/APPLICATION/RESOURCES/JMS/EAI/UserName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_nSR-IBfrEeuGnqCQwo3TZg" name="/APPLICATION/RESOURCES/JMS/EAI/Password" type="property:password" scaext:simpleValue="#!JqbSeSBWcmbtPqZ8+tNYpA==" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_txxSsBmvEeueju1jmd5FjQ" name="/APPLICATION/RESOURCES/JMS/EAI/BatchTelegramExpiration" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_FlXn8BeFEeuVfsASWLgHpA" name="/APPLICATION/DESTINATION/JMS/QUEUE/BatchSchedulerResult" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_pTy1ABp_EeuLjrCbfPiJcw" name="/APPLICATION/DESTINATION/JMS/TOPIC/ReloadScheduleInfo" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_Pd4LcBp1EeuLjbCbfPiJcw" name="/APPLICATION/BASEINFO/FILE/FileHomeDir" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_Ol8BYBp2EeuLjbCbfPiJcw" name="/APPLICATION/BASEINFO/FILE/Slash" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_fA_7EBp1EeuLjbCbfPiJcw" name="/APPLICATION/BASEINFO/FILE/CfgFileName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:component xmi:id="_GUIJMBd2EeuorsVZPvTk2Q" name="ComponentBatchScheduler" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_GUIwQBd2EeuorsVZPvTk2Q" processName="Scheduler.BatchScheduler"/>
+  </sca:component>
+  <sca:component xmi:id="_mAZssBeBEeuVfsASWLgHpA" name="ComponentSetScheduleInfo" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_mAZssReBEeuVfsASWLgHpA" processName="Scheduler.SetScheduleInfo"/>
+  </sca:component>
+  <sca:component xmi:id="_-MxrgBp-EeuLjrCbfPiJcw" name="ComponentReloadScheduleInfo" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_-MxrgRp-EeuLjrCbfPiJcw" processName="Scheduler.ReloadScheduleInfo"/>
+  </sca:component>
+  <sca:component xmi:id="_DKJLIBqEEeuLjrCbfPiJcw" name="ComponentBatchScheduler_ResultUpdate" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_DKJLIRqEEeuLjrCbfPiJcw" processName="Scheduler.BatchScheduler_ResultUpdate"/>
+  </sca:component>
+</sca:composite>

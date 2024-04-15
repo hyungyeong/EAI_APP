@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/DelayAlert" xmlns:tns="http://www.example.org/DelayAlert" elementFormDefault="qualified">
+
+    <element name="Telegram-Body">
+    	<complexType>
+    		<sequence>
+    			<element name="DATA" minOccurs="0"  maxOccurs="unbounded">
+    				<complexType>
+    					<sequence>
+    						<element name="SendName" type="string" minOccurs="0"></element>
+    						<element name="Action" type="string" minOccurs="0"></element>
+    						<element name="Contents" type="string" minOccurs="0"></element>
+    						<element name="SendID" type="string" minOccurs="0"></element>
+    						<element name="SystemName" type="string" minOccurs="0"></element>
+    						<element name="RecvId" type="string" minOccurs="0"></element>
+    						<element name="Option" type="string" minOccurs="0"></element>
+    						<element name="CMD" type="string" minOccurs="0"></element>
+    						<element name="Subject" type="string" minOccurs="0"></element>
+    						<element name="URL" type="string" minOccurs="0"></element>
+    				    </sequence>
+    				</complexType>
+    			</element>
+    		</sequence>
+    	</complexType>
+    </element>
+
+    <element name="Telegram">
+    	<complexType>
+    		<sequence>
+    			<element name="HEADER" maxOccurs="1" minOccurs="1">
+    				<complexType>
+    				    <sequence>
+    						<element name="IF_ID" type="string"></element>
+    						<element name="IF_TRC_ID" type="string" minOccurs="0" maxOccurs="1"></element>
+    						<element name="ADDITIONAL_INFO" type="string" minOccurs="0" maxOccurs="1"></element>
+    						<element name="RST_CD" type="string" minOccurs="0" maxOccurs="1" nillable="true"></element>
+                            <element name="RST_MSG" type="string" minOccurs="0" maxOccurs="1" nillable="true"></element>
+                        </sequence>
+    				</complexType>
+    			</element>
+    			<element name="BODY" type="string" maxOccurs="1" minOccurs="0"></element>
+    		</sequence>
+    	</complexType>
+    </element>
+
+    <element name="RecvUserInfo">
+    	<complexType>
+    		<sequence>
+    			<element name="USER" type="string"></element>
+    		</sequence>
+    	</complexType>
+    </element>
+</schema>

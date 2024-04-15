@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmlns:tp="http://xsd.tns.tibco.com/bw/models/sharedresource/threadpool" xmi:id="_wPYbARf2Eeut5r2EP7PoZw" name="POOL.EAI" type="tp:ThreadPoolConfiguration">
+  <jndi:configuration xsi:type="tp:ThreadPoolConfiguration" xmi:id="_wPcFYBf2Eeut5r2EP7PoZw" keepAliveTimeUnit="MILLISECONDS">
+    <substitutionBindings xmi:id="_yiBMABf2Eeut5r2EP7PoZw" template="coreThreadPoolSize" propName="/APPLICATION/RESOURCES/POOL/EAI/CorePoolSize"/>
+    <substitutionBindings xmi:id="_13LJ8Bf2Eeut5r2EP7PoZw" template="maxPoolSize" propName="/APPLICATION/RESOURCES/POOL/EAI/MaxPoolSize"/>
+    <substitutionBindings xmi:id="_5MuwgBf2Eeut5r2EP7PoZw" template="keepAliveTime" propName="/APPLICATION/RESOURCES/POOL/EAI/KeepAliveTime"/>
+    <substitutionBindings xmi:id="_7r8k8Bf2Eeut5r2EP7PoZw" template="autoStartCoreThreads" propName="/APPLICATION/RESOURCES/POOL/EAI/AutostartCoreThreads"/>
+    <substitutionBindings xmi:id="_GfXEMBf3Eeut5r2EP7PoZw" template="daemon" propName="/APPLICATION/RESOURCES/POOL/EAI/Daemon"/>
+    <substitutionBindings xmi:id="_MPugUBf3Eeut5r2EP7PoZw" template="priority" propName="/APPLICATION/RESOURCES/POOL/EAI/Priority"/>
+  </jndi:configuration>
+</jndi:namedResource>

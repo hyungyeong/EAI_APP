@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: CSPI_Custom_XPath_Functions
+Bundle-SymbolicName: CSPI_Custom_XPath_Functions;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Export-Package: cspi_custom_xpath_functions
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Service-Component: OSGI-INF/cxf.xml
+Bundle-ActivationPolicy: lazy
+Import-Package: com.tibco.xml.cxf.common.annotations
