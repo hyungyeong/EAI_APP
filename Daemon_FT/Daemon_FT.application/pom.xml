@@ -90,10 +90,10 @@
         <configuration>
           <namespace>tibco</namespace>
           <buildStrategy>jib</buildStrategy>
-          <registry>http://192.168.10.69:5000</registry>
+          <registry>http://10.0.0.3:5000</registry>
           <authConfig>
             <username>admin</username>
-            <password>cspi00</password>
+            <password>ehxhfl0819</password>
           </authConfig>
           <skip>false</skip>
           <images>
