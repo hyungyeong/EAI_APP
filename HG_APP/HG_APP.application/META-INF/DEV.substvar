@@ -93,12 +93,13 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//HG_APP///Resource/Jms/ProviderURL</name>
-			<value>tcp://10.0.0.3:7222</value>
+			<value>tcp://192.168.238.129:7222</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>tcp://192.168.238.129:7222</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//HG_APP///Destination/Topic/ReloadBaseInfo</name>
